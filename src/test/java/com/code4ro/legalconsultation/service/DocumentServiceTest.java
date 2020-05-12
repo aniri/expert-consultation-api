@@ -2,7 +2,6 @@ package com.code4ro.legalconsultation.service;
 
 import com.code4ro.legalconsultation.model.dto.DocumentConsolidatedDto;
 import com.code4ro.legalconsultation.model.dto.DocumentMetadataDto;
-import com.code4ro.legalconsultation.model.persistence.DocumentMetadata;
 import com.code4ro.legalconsultation.model.persistence.DocumentConsolidated;
 import com.code4ro.legalconsultation.model.persistence.User;
 import com.code4ro.legalconsultation.service.impl.DocumentConsolidatedService;
@@ -22,7 +21,6 @@ import org.springframework.data.domain.Pageable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
-import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
