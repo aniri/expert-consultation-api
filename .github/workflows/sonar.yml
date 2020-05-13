@@ -3,8 +3,8 @@ name: SonarCloud
 on:
   push:
     branches: [master, develop]
-  pull_request:
-    branches: [master, develop]
+#  pull_request:
+#    branches: [master, develop]
 
 jobs:
 
@@ -25,7 +25,7 @@ jobs:
         with:
           java-version: 11
       - name: Analyze with SonarCloud
-        run: mvn -B clean verify sonar:sonar -Dsonar.projectKey=code4romania_expert-cons-api -Dsonar.organization=code4romania -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN -DskipTests
+        run: mvn -B clean verify sonar:sonar -Dsonar.projectKey=code4romania_expert-consultation-api -Dsonar.organization=code4romania -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN -DskipTests
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
