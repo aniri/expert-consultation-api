@@ -19,6 +19,10 @@
         <jjwt.version>0.9.0</jjwt.version>
 		<mapstruct.version>1.3.1.Final</mapstruct.version>
 		<lombok.version>1.18.12</lombok.version>
+
+		<sonar.projectKey>code4romania_expert-consultation-api</sonar.projectKey>
+		<sonar.organization>code4romania</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencies>
